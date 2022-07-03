@@ -37,6 +37,6 @@ def login():
     return render_template('admin/login.html')
 
 @admin_bp.route('/logout')
-def logout:
+def logout():
     session.clear()
     return redirect(url_for('admin.login'))
